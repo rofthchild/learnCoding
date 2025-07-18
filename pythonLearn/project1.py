@@ -25,6 +25,22 @@ questions = {
 ## created a dictionary which is just a Key and Value pair
 
 def python_trivia_game():
-    print("hello")
+    questions_list = list(questions.keys())
+    total_questions = 5
+    score = 0
+
+    selected_questions = random.sample(questions_list, total_questions)
+
+    for idx, question in enumerate(selected_questions):
+        print(f"{idx + 1}. {question}")
+        user_answer = input("Your Answer: ").lower().strip()
+
+        correct_answer = questions[question]
+
+        if user_answer == correct_answer.lower():
+            print("Correct!\n")
+            score += 1
+        else:
+            print(f"Wrong. The correct answer is: {correct_answer}. \n")
 
 python_trivia_game()
