@@ -12,7 +12,7 @@ import random
 questions = {
     "What is the keyword to define a function in Python?": "def",
     "Which data type is used to store True or False values?": "boolean",
-    "What is the correct file extension for Python files?": "•py",
+    "What is the correct file extension for Python files?": ".py",
     "Which symbol is used to comment in Python?": "#",
     "What function is used to get input from the user?": "input",
     "How do you start a for loop in Python?": "for",
